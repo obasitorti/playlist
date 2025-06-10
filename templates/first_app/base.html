@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}
+        
+        {% endblock title %}</title>
+    </head>
+    <body bgcolor="lightgreen">
+        <h1>{% block header %}
+        
+        {% endblock header %}</h1>
+        <table style="width:100%; text-align:center">
+                <tr>
+                     <th>No.</th>
+                    <th>Track</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Length</th>
+                </tr>
+                {% block table %}
+                
+                {% endblock table %}
+        </table> 
+        </body>
+</html>
+
+
+

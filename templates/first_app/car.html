@@ -1,0 +1,22 @@
+{% extends "first_app/base.html" %}
+
+{% block title %}
+Car Playlist
+{% endblock title %}
+
+{% block header %}
+Car Playlist
+{% endblock header %}
+
+{% block table %}
+{% for song_name, details in song_details.items  %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{song_name}}</td>
+                    <td>{{details.artist}}</td>
+                    <td>{{details.album}}</td>
+                    <td>{{details.length}}</td>
+                </tr>
+{% endfor %}
+{% endblock table %}
+
